@@ -35,6 +35,22 @@ h3 {
   background-color: #F4F4F4
 }
 
+#engineer{
+  background: linear-gradient(transparent 60%, #FFADAD 60%);
+}
+
+#business{
+  background: linear-gradient(transparent 60%, #FFF799 60%);
+}
+
+#design{
+  background: linear-gradient(transparent 60%, #C1E0FF 60%);
+}
+
+#civil{
+  background: linear-gradient(transparent 60%, #B2FFB2 60%);
+}
+
 .iniad {
   color: #23ADE5;
 }
