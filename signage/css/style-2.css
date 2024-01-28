@@ -1,0 +1,233 @@
+
+.background {
+    padding: 10px;                /* 余白指定 */
+    background: linear-gradient(-180deg, #508780 0%, #3277a6 56%, #1e3e96 100%);
+
+}
+
+.title {
+	width: 80%;
+	position: relative;
+	background: #cccccc;		/*背景色*/
+	display: flex;				/*flexボックスを使う指定*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	margin-top: 20px;
+	margin-left: auto; /* 🖐 */
+	margin-right: auto; /* 🖐 */
+}
+
+.titleblock {
+	width: 70%;
+	position: relative;
+	padding: 0px;			/*ボックス内の余白*/
+	background: #cccccc;		/*背景色*/
+    border-radius: 10px;
+	display: flex;				/*flexボックスを使う指定*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	margin-left: auto; /* 🖐 */
+	margin-right: auto; /* 🖐 */
+}
+
+.fac {
+	width: 95%;
+	position: relative;
+	margin-bottom: 1rem;	/*ボックス同士の上下間に空けるスペース*/
+	padding: 5px;			/*ボックス内の余白*/
+	background: #cccccc;		/*背景色*/
+    border-radius: 10px;
+	display: flex;				/*flexボックスを使う指定*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	margin-left: auto; /* 🖐 */
+	margin-right: auto; /* 🖐 */
+}
+
+
+/*ボックス１個あたり*/
+.fac .facblock {
+	position: relative;
+	margin-bottom: 1rem;	/*ボックス同士の上下間に空けるスペース*/
+	padding: 20px;			/*ボックス内の余白*/
+	background: #fff;		/*背景色*/
+    border-radius: 10px;
+	display: flex;				/*flexボックスを使う指定*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+
+	
+		/*１個あたりのボックス設定*/
+		.facblock {
+			width: 47%;			/*幅。３列になります。*/
+			margin-right: 5%;	/*右側へのマージン。ボックス同士の左右の余白です。*/
+		}
+		
+		/*3の倍数目のボックスの右側のマージンをなくす*/
+		.facblock:nth-of-type(2n) {
+			margin-right: 0;
+		}
+
+				/*listブロック全体を囲むブロック*/
+		.fac {
+			display: flex;		/*flexボックスを使う指定*/
+			flex-direction: row;		/*子要素を縦並びにする*/
+			flex-wrap: wrap;	/*折り返す指定*/
+			margin-left: auto; /* 🖐 */
+			margin-right: auto; /* 🖐 */
+		}
+	
+		/*ボックス内のtextブロックだけ伸ばす*/
+		.fac .facblock ul {
+			flex: 1;
+		}
+	
+		}/*追加指定ここまで*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+
+li {
+	position:relative;
+	padding: 0 0 0 30px;
+	margin: 7px 0 7px 0px;
+	font-weight: bold;
+	font-size:14px;
+}
+
+ul li::before {
+	position: absolute;
+	left: 0;
+	font-family: FontAwesome;
+	content: "\f0c8";
+	color: #00ACDB;
+	padding-right:10px;
+}
+
+
+
+/*学部見出し*/
+.facultyname {
+    text-align: center;  /* 文字を中央揃え */
+}
+.facultyname h2 {
+    font-weight: bold;
+    color: #fff;
+    display: inline-block; /* ブロック要素のように扱う */
+    border-top: 2px solid #fff; /* 下線のスタイルと色を指定 */
+    padding-top: 15px; /* 下線とテキストの間のスペースを調整 */
+    border-bottom: 2px solid #fff; /* 下線のスタイルと色を指定 */
+    padding-bottom: 15px; /* 下線とテキストの間のスペースを調整 */
+    margin: 50px; /* 見出しの下部の余白を指定 */
+}
+
+
+
+
+/*３列タイプのボックス（flex）
+---------------------------------------------------------------------------*/
+/*ボックス１個あたり*/
+.list-flex .list {
+	position: relative;
+	margin-bottom: 1rem;	/*ボックス同士の上下間に空けるスペース*/
+	padding: 30px;			/*ボックス内の余白*/
+	background: #fff;		/*背景色*/
+    border-radius: 10px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	display: flex;				/*flexボックスを使う指定*/
+	flex-direction: column;		/*子要素を縦並びにする*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+}
+
+/*ボックス内のh4タグ*/
+.list-flex .list h4 {
+	margin: 0;
+	color: #333;	/*文字色*/
+    font-weight: bold;
+    padding: 1rem ;
+    margin-bottom: 1rem;	/*下に空けるスペース*/
+/*  border-left: 5px solid #3277a6;  */
+    background: #e8f7ff;
+}
+
+.list-flex .list h4:before{
+
+	font-family: FontAwesome;
+	content: "\f0a9";
+	margin-right:8px;  /*アイコン右の余白*/
+	font-size: 1.2em;
+	font-weight: 900;
+	background: #e8f7ff;
+
+}
+
+.list-flex .list h4 a {
+	color: inherit;
+}
+
+/*ボックス内のh5タグ*/
+.list-flex .list h5 {
+	margin: 0;
+	color: #1e3e96;	/*文字色*/
+    font-weight: bold;
+}
+.list-flex .list h4 a {
+	color: inherit;
+}
+
+
+/*ボックス内のpタグ*/
+.list-flex .list .text p {
+	margin: 10px;
+	font-size: 0.8em;	/*文字サイズを80%に*/
+	/*line-height: 1.5;	/*行間を少し狭く*/
+}
+
+/*ボックス内のfigure画像*/
+.list-flex .list img {
+	margin-bottom: 2rem;	/*下に空けるスペース*/
+    width: 100%;  
+    height: auto; /* 高さを自動調整（アスペクト比を維持） */
+}
+
+/*ボタン*/
+.list-flex .btn a {
+	display: block;text-decoration: none;
+	text-align: center;		/*テキストをセンタリング*/
+	background: #eee;		/*背景色*/
+	border: 1px solid #999;	/*枠線の幅、線種、色*/
+	padding: 5px 10px;		/*ボタン内の余白*/
+	margin-top: 1rem;		/*ボタンの上に空けるスペース*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	/*listブロック全体を囲むブロック*/
+	.list-flex {
+		display: flex;		/*flexボックスを使う指定*/
+		flex-wrap: wrap;	/*折り返す指定*/
+	}
+
+	/*１個あたりのボックス設定*/
+	.list-flex .list {
+		width: 32%;			/*幅。３列になります。*/
+		margin-right: 2%;	/*右側へのマージン。ボックス同士の左右の余白です。*/
+	}
+	
+	/*3の倍数目のボックスの右側のマージンをなくす*/
+	.list-flex .list:nth-of-type(3n) {
+		margin-right: 0;
+	}
+
+	/*ボックス内のtextブロックだけ伸ばす*/
+	.list-flex .list .text {
+		flex: 1;
+	}
+
+	}/*追加指定ここまで*/
