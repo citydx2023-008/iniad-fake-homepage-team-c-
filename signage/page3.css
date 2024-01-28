@@ -2,25 +2,25 @@ body{background-color:#17194c;
     color:#ffffff;
     padding:0;
     margin:0;}
-    
-    
-    #header {
-      background-color : #17194c;
-      padding : 10px 20px 10px 20px;
-      height : 100px;
-    }
 
     #qr_img{text-align: center;}
     #access{
         text-align: center;
     }
     
-    h1{text-align: center;}
-    h2{text-align: center;}
-    h3{text-align: center;}
-    
-    #header img{
-      height: 80px;
+    h1{
+      text-align: center;
+      font-size: 100px;
+    }
+    h2{
+      text-align: center;
+      font-size:75px;
+      background-color:#FFFFFF;
+      color:#17194c;
+    }
+    h3{
+      text-align: center;
+      font-size: 50px;
     }
     
     #footer {
