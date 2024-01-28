@@ -1,14 +1,26 @@
+body{background-color:#17194c;
+color:#ffffff;
+padding:0;
+margin:0;}
+
+
 #header {
   background-color : #17194c;
   padding : 10px 20px 10px 20px;
-  height : 40px;
-}
-#header img{
-  height: 40px;
+  height : 100px;
 }
 
+h1{text-align: center;}
+h2{text-align: center;}
+h3{text-align: center;}
+
+#header img{
+  height: 80px;
+}
+#asaka_img{text-align: center;}
+
 #footer {
-  text: 1px;
+  font-size : 10px;
   color : #ffffff;
   background-color : #17194c;
   text-align : center; 
