@@ -1,0 +1,31 @@
+body{background-color:#17194c;
+    color:#ffffff;
+    padding:0;
+    margin:0;}
+    
+    
+    #header {
+      background-color : #17194c;
+      padding : 10px 20px 10px 20px;
+      height : 100px;
+    }
+
+    #qr_img{text-align: center;}
+    #access{
+        text-align: center;
+    }
+    
+    h1{text-align: center;}
+    h2{text-align: center;}
+    h3{text-align: center;}
+    
+    #header img{
+      height: 80px;
+    }
+    
+    #footer {
+      font-size : 10px;
+      color : #ffffff;
+      background-color : #17194c;
+      text-align : center; 
+    }
