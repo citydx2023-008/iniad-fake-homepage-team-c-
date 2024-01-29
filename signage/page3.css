@@ -1,12 +1,10 @@
-body{background-color:#17194c;
-    color:#ffffff;
-    padding:0;
-    margin:0;}
+body{
+  background: linear-gradient(#17194c, #4848A4);
+  color:#ffffff;
+  padding:0;
+  margin:0;}
 
     #qr_img{text-align: center;}
-    #access{
-        text-align: center;
-    }
     
     h1{
       text-align: center;
@@ -26,6 +24,5 @@ body{background-color:#17194c;
     #footer {
       font-size : 10px;
       color : #ffffff;
-      background-color : #17194c;
       text-align : center; 
     }
