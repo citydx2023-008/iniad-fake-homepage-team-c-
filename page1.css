@@ -1,8 +1,8 @@
-body{background-color:#17194c;
-color:#ffffff;
-padding:0;
-margin:0;}
-
+body{
+  background: linear-gradient(#17194c, #4848A4);
+  color:#ffffff;
+  padding:0;
+  margin:0;}
 
 #header {
   background-color : #17194c;
@@ -10,18 +10,24 @@ margin:0;}
   height : 100px;
 }
 
-h1{text-align: center;}
+h1{text-align: center;
+  transform: skewX(-15deg);
+}
+
+
 h2{text-align: center;}
-h3{text-align: center;}
+
+h3{text-align: center;
+  transform: skewX(-15deg)}
 
 #header img{
   height: 80px;
 }
-#asaka_img{text-align: center;}
+#asaka_img{text-align:center;
+  }
 
 #footer {
   font-size : 10px;
   color : #ffffff;
-  background-color : #17194c;
   text-align : center; 
 }
