@@ -2,38 +2,58 @@
 .background {
     padding: 10px;                /* 余白指定 */
     background: linear-gradient(-180deg, #508780 0%, #3277a6 56%, #1e3e96 100%);
+/*    background: linear-gradient(-180deg, #b37906 0%, #ffad08 56%, #ffad08 100%);*/
 
 }
 
 .title {
 	width: 80%;
 	position: relative;
-	background: #cccccc;		/*背景色*/
 	display: flex;				/*flexボックスを使う指定*/
 	flex-direction: column;		/*子要素を縦並びにする*/
+	border:3px solid #fff;
 	margin-top: 20px;
 	margin-left: auto; /* 🖐 */
 	margin-right: auto; /* 🖐 */
+	margin-bottom: 15px;
+	padding: 0%;
+}
+
+.title h1{
+	font-weight: bolder;
+	font-size: 45px;
+	color: #fff;
+}
+
+.title h2{
+	font-weight: bolder;
+	color: #fff;
+}
+
+
+.title p{
+	font-weight: bolder;
+	font-size: 20px;
+	color: #fff;
 }
 
 .titleblock {
-	width: 70%;
 	position: relative;
 	padding: 0px;			/*ボックス内の余白*/
-	background: #cccccc;		/*背景色*/
-    border-radius: 10px;
 	display: flex;				/*flexボックスを使う指定*/
 	flex-direction: column;		/*子要素を縦並びにする*/
+	margin-top: 10px;
 	margin-left: auto; /* 🖐 */
 	margin-right: auto; /* 🖐 */
+	text-align: center;
+	border-bottom: dotted #fff;
 }
 
 .fac {
-	width: 95%;
+	width: 100%;
 	position: relative;
 	margin-bottom: 1rem;	/*ボックス同士の上下間に空けるスペース*/
 	padding: 5px;			/*ボックス内の余白*/
-	background: #cccccc;		/*背景色*/
     border-radius: 10px;
 	display: flex;				/*flexボックスを使う指定*/
 	flex-direction: column;		/*子要素を縦並びにする*/
@@ -46,8 +66,7 @@
 .fac .facblock {
 	position: relative;
 	margin-bottom: 1rem;	/*ボックス同士の上下間に空けるスペース*/
-	padding: 20px;			/*ボックス内の余白*/
-	background: #fff;		/*背景色*/
+	padding: 10px;			/*ボックス内の余白*/
     border-radius: 10px;
 	display: flex;				/*flexボックスを使う指定*/
 	flex-direction: column;		/*子要素を縦並びにする*/
@@ -61,8 +80,7 @@
 	
 		/*１個あたりのボックス設定*/
 		.facblock {
-			width: 47%;			/*幅。３列になります。*/
-			margin-right: 5%;	/*右側へのマージン。ボックス同士の左右の余白です。*/
+			width: 40%;			/*幅。３列になります。*/
 		}
 		
 		/*3の倍数目のボックスの右側のマージンをなくす*/
@@ -75,8 +93,9 @@
 			display: flex;		/*flexボックスを使う指定*/
 			flex-direction: row;		/*子要素を縦並びにする*/
 			flex-wrap: wrap;	/*折り返す指定*/
-			margin-left: auto; /* 🖐 */
-			margin-right: auto; /* 🖐 */
+			justify-content: center;
+			/*margin-left: auto;  🖐 */
+			/*margin-right: auto; /* 🖐 */
 		}
 	
 		/*ボックス内のtextブロックだけ伸ばす*/
@@ -97,7 +116,8 @@ li {
 	padding: 0 0 0 30px;
 	margin: 7px 0 7px 0px;
 	font-weight: bold;
-	font-size:14px;
+	font-size:20px;
+	color: #fff;
 }
 
 ul li::before {
@@ -155,16 +175,17 @@ ul li::before {
     background: #e8f7ff;
 }
 
-.list-flex .list h4:before{
+/*.list-flex .list h4:before{
 
 	font-family: FontAwesome;
 	content: "\f0a9";
 	margin-right:8px;  /*アイコン右の余白*/
-	font-size: 1.2em;
+/*	font-size: 1.2em;
 	font-weight: 900;
 	background: #e8f7ff;
 
 }
+*/
 
 .list-flex .list h4 a {
 	color: inherit;
