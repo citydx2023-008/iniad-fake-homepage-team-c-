@@ -261,12 +261,20 @@ ul li::before {
 
 	}/*追加指定ここまで*/
 
+	#nextpage {
+		text-align: center;
+
+	}
+
+	#nextpage a {
+		color: inherit;
+	}
 
 	#footer {
 		font-size : 10px;
 		color : #ffffff;
 		text-align : center; 
-		padding:20px 0 0px 0;
+		padding:50px 0 0px 0;
 		height: 50px;
 	  }
 	  
