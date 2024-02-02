@@ -2,9 +2,24 @@
 .background {
     padding: 20px;                /* 余白指定 */
     background: linear-gradient(-180deg, #17184b 0%, #63a385 100%);
-/*    background: linear-gradient(-180deg, #b37906 0%, #ffad08 56%, #ffad08 100%);*/
-
 }
+
+
+@keyframes fadeInFromBottom {
+	from {
+	  opacity: 0;
+	  transform: translateY(50px); /* 下方向に50px移動 */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0); /* 移動せずに表示 */
+	}
+  }
+  
+  .title, .facultyname, .list-flex {
+	opacity: 0; /* 最初は透明に設定 */
+	animation: fadeInFromBottom 1s ease-out forwards;
+  }
 
 #header {
 	padding : 10px 20px 10px 20px;
@@ -21,8 +36,8 @@
 	flex-direction: column;		/*子要素を縦並びにする*/
 	border:5px solid #fff;
 	margin-top: 70px;
-	margin-left: auto; /* 🖐 */
-	margin-right: auto; /* 🖐 */
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
 	padding: 0%;
 }
@@ -88,22 +103,19 @@
 	
 		/*１個あたりのボックス設定*/
 		.facblock {
-			width: 40%;			/*幅。３列になります。*/
+			width: 40%;			
 		}
 		
-		/*3の倍数目のボックスの右側のマージンをなくす*/
+		/*２の倍数目のボックスの右側のマージンをなくす*/
 		.facblock:nth-of-type(2n) {
 			margin-right: 0;
 		}
 
-				/*listブロック全体を囲むブロック*/
 		.fac {
 			display: flex;		/*flexボックスを使う指定*/
 			flex-direction: row;		/*子要素を縦並びにする*/
 			flex-wrap: wrap;	/*折り返す指定*/
 			justify-content: center;
-			/*margin-left: auto;  🖐 */
-			/*margin-right: auto; /* 🖐 */
 		}
 	
 		/*ボックス内のtextブロックだけ伸ばす*/
@@ -111,7 +123,7 @@
 			flex: 1;
 		}
 	
-		}/*追加指定ここまで*/
+		}
 
 ul {
 	list-style: none;
@@ -274,7 +286,7 @@ ul li::before {
 		font-size : 10px;
 		color : #ffffff;
 		text-align : center; 
-		padding:50px 0 0px 0;
+		padding:105px 0 0 0;
 		height: 50px;
 	  }
 	  
