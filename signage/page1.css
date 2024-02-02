@@ -1,36 +1,62 @@
 body{
   background: linear-gradient(#17194c, #4848A4);
   color:#ffffff;
-  padding:0;
-  margin:0;}
+ 
+ }
 
 #header {
   background-color : #17194c;
   padding : 10px 20px 10px 20px;
   height : 100px;
 }
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* 透明度を0に設定 */
+      transform: translateY(20px); /* 上方向に20px移動 */
+  }
+  100% {
+      opacity: 1; /* 透明度を1に設定 */
+      transform: translateY(0); /* 元の位置に戻す */
+  }
+}
 
 h1{text-align: center;
   transform: skewX(-15deg);
-font-size:50px;}
+font-size:50px;
+animation: slideIn 1s forwards;  }
 
 
 h2{text-align: center;
-  font-size: 40px;}
+  font-size: 40px;
+  animation: slideIn 1s forwards;  }
+ 
 
 h3{text-align: center;
-  transform: skewX(-15deg)}
+  transform: skewX(-15deg);
+  animation: fadeIn 1s ease-out;  }
 
 #header img{
   height: 80px;
 }
 #asaka_img{text-align:center;
+  padding: 1em;
   }
   #asaka_labo_img{text-align:center;
-  }
+    padding: 1em; }
 
 #footer {
   font-size : 10px;
   color : #ffffff;
   text-align : center; 
+  margin: 40px 10px 50px 10px;
 }
+
+
