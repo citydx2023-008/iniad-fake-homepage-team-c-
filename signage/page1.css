@@ -31,12 +31,12 @@ body{
 h1{text-align: center;
   transform: skewX(-15deg);
 font-size:50px;
-animation: slideIn 1s forwards;  }
+animation: slideIn 3s forwards;  }
 
 
 h2{text-align: center;
   font-size: 40px;
-  animation: slideIn 1s forwards;  }
+  animation: slideIn 3s ease-in-out forwards;  }
  
 
 h3{text-align: center;
